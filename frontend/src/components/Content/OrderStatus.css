@@ -1,0 +1,54 @@
+.order-status-container {
+    margin-top: 20px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #f0f0f0;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .progress-line {
+    height: 100%;
+    background-color: #007bff; /* Blue color for progress line */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .progress-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #007bff; /* Blue color for progress dot */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(100% - 5px); /* Place dot at end of progress line */
+  }
+  
+  .progress-steps {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+  
+  .progress-step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+  }
+  
+  .progress-step.active:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #007bff; /* Blue color for active step */
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 5px);
+    left: 50%;
+    transform: translateX(-50%);
+  }

@@ -16,6 +16,7 @@ import Ngo from './components/Users/Ngo';
 import Princi from './components/Users/Princi';
 import Admin from './components/Users/Admin'
 import Chatbot from './components/Chatbot/Chatbot';
+import Track from './components/Content/Track'
 
 
 function App() {
@@ -73,6 +74,10 @@ function App() {
         {
           path:'Bot',
           element: <Chatbot />
+        },
+        {
+          path:'track',
+          element: <Track/>
         }
       ]
     },
